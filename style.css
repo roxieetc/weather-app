@@ -1,0 +1,73 @@
+html {
+    background: rgb(165, 255, 195);
+    background: linear-gradient(25deg, rgba(165,255,195,1) 0%, rgba(0,127,197,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff3a;
+    border: 3px solid #ffffff4d;
+    box-shadow: rgba(110, 110, 136, 0.25) 0px 6px 12px -2px, rgba(102, 102, 102, 0.222) 0px 5px 57px -3px;
+    max-width: 500px;
+    margin-top: 5rem;
+    padding: 4rem;
+    border-radius: 25px;
+}
+
+.search-bar input {
+    background-color: #ffffff7a;
+    color: #666;
+    border: none;
+    border-radius: 50px;
+    min-width: 300px;
+    height: 30px;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+.search-bar button {
+    background-color: #ffffff7a;
+    color: #666;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #ffffffb8;
+}
+
+.title-section h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 44px;
+    margin-top: 4rem;
+}
+
+.weather-img {
+    text-align: center;
+}
+
+.weather-img img {
+    height: 150px;
+}
+
+.current-temp h1 {
+    font-weight: 200;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 15px;
+}
