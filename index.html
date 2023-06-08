@@ -16,23 +16,33 @@
     <div class="card">
 <!-- SEARCH BAR -->
         <div class="search-bar">
-            <input type="text" placeholder="Search for your city...">
-            <button>Search</button>
+            <input type="text" placeholder="Search for your city..." class="search">
+            <button class="select">Search</button>
         </div>
 <!-- CITY TITLE -->
         <div class="title-section">
-            <h1>Los Angeles</h1>
+            <h1 class="city">--</h1>
         </div>
+<!-- WEATHER DESCRIPTION -->
+<div class="weather-desc">
+    <p class="description">Clear Skies</p>
+</div>
 <!-- WEATHER STATUS IMAGE -->
         <div class="weather-img">
-            <img src="./assets/sunny.svg" alt="sunny">
+            <img src="./assets/sunny.svg" class="status-img">
         </div>
 <!-- CURRENT TEMP SECTION -->
         <div class="current-temp">
-            <h1>85°F</h1>
+            <h1 class="temp">--</h1>
         </div>
+<!-- FEELS LIKE SECTION -->
+<div class="alt-temps">
+    <p class="feels-like">Feels like:</p>
+    <p class="min-temp">Min:</p>
+    <p class="max-temp">Max:</p>
+</div>
     </div>
 </div>
-    
+<script src="./script.js"></script>
 </body>
 </html>
