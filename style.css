@@ -1,9 +1,19 @@
 html {
     background: rgb(165, 255, 195);
-    background: linear-gradient(25deg, rgba(165,255,195,1) 0%, rgba(0,127,197,1) 100%);
+    background: linear-gradient(25deg, rgb(123, 232, 159) 0%, rgb(12, 128, 190) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+
+h2, h3 {
+    font-weight: 300;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 body {
@@ -12,6 +22,13 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 400;
 }
 
 .card {
@@ -19,8 +36,8 @@ body {
     border: 3px solid #ffffff4d;
     box-shadow: rgba(110, 110, 136, 0.25) 0px 6px 12px -2px, rgba(102, 102, 102, 0.222) 0px 5px 57px -3px;
     max-width: 500px;
-    margin-top: 5rem;
-    padding: 4rem;
+    margin-top: 3rem;
+    padding: 3rem;
     border-radius: 25px;
 }
 
@@ -82,4 +99,81 @@ body {
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.button-container button {
+    background-color: #ffffff3a;
+    border: 1px solid #ffffff4d;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    padding: .25rem 1.5rem;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    .card {
+        padding: 2.5rem;
+    }
+    
+    .title-section h1 {
+        font-size: 35px;
+        margin-top: 2rem;
+    }
+    
+    .weather-desc {
+        font-size: 20px;
+    }
+    
+    .weather-img img {
+        height: 120px;
+    }
+    
+    .current-temp h1 {
+        font-size: 65px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+
+    .search-bar input {
+        min-width: 230px;
+        padding: 5px 20px;
+    }
+    
+    .search-bar button {
+        padding: 8px 15px;
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .search-bar {
+        margin-left: 20px;
+    }
+
+    .search-bar input {
+        min-width: 200px;
+        padding: 5px 20px;
+        margin-bottom: 5px;
+    }
+    
+    .search-bar button {
+        padding: 8px 15px;
+        margin-left: 29%;
+    }
+
+    .alt-temps {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
 }
